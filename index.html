@@ -6,7 +6,7 @@
     <script src="js/v2-polyfill.min.js"></script>
     <!-- EditorX -->
     <script>
-      const host = window.location.hostname;
+      const host = window.location.href;
       const urlParams = new URLSearchParams(window.location.search);
       window.isEditorX = host.indexOf('.editorx.com') >= 0 || urlParams.get('forceEditorX') === 'true';
 
